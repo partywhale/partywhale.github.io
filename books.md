@@ -7,7 +7,7 @@ sidebar_sort_order: 3
 ---
 
 <p class="message">
-  This is a list of books I've read. Obviously not *all* the books I've read, just those I've read or re-read since implementing this list. I use it to keep passages I want to remember or favourite quotations.
+  This is a list of books I've read. Obviously not *all* the books I've read, just those I've read or re-read since implementing this list, and some entries I've scavenged off of Goodreads. I use it to keep passages I want to remember or favourite quotations.
 </p>
 
 {% assign sorted = site.books | sort: 'date' | reverse %}
