@@ -9,7 +9,17 @@ This is the first post. I needed something to fill this space.
 Here I am testing the code snippet functionality with a very simple Python 'Hello World' program:
 
 {% highlight python %}
-print("Hello world!")
+print('Hello world!')
+#=> prints 'Hello world!'.
+{% endhighlight %}
+
+Or a little more complicated:
+
+{% highlight python %}
+def helloWorld():
+    print('Hello world!')
+for x in range(1):
+    helloWorld()
 #=> prints 'Hello world!'.
 {% endhighlight %}
 
