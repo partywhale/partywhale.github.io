@@ -13,22 +13,49 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@example.com
+title: James Watkins
+email: jameserson@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Grad student. Analyst. Tinkerer.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: ilya_recur
+github_username:  partywhale
 
 # Build settings
 markdown: kramdown
-theme: minima
+kramdown:
+  parse_block_html: true
+highlighter: rogue
+# theme: minima
+remote_theme: fongandrew/hydeout
 plugins:
   - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+
+# Sidebar link settings
+sidebar_home_link:  true
+#sidebar_blog_link:  '/blog'   # By default, your home page is your blog
+                                # page. If you change your paginate_path,
+                                # set this to the root of the paginate_path
+                                # to enable a separate blog link.
+
+#paginate:         5
+#paginate_path:    '/blog/page:num' # '/page:num'
+                    # Or '/blog/page:num' if you want to move your index pages
+
+# Collections
+collections:
+  books:
+    output: true
+
+# Disqus Comments
+disqus:
+    # Leave shortname blank to disable comments site-wide.
+    # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
+    shortname:
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
