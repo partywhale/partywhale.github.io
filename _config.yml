@@ -26,7 +26,7 @@ github_username:  partywhale
 markdown: kramdown
 kramdown:
   parse_block_html: true
-highlighter: rogue
+highlighter: rouge
 # theme: minima
 remote_theme: fongandrew/hydeout
 plugins:

@@ -6,6 +6,5 @@ sidebar_link: true
 sidebar_sort_order: 4
 ---
 
-<p class="message">
-  There will be a more detailed bio here, just you wait!
-</p>
+![Photo of me in 2016](assets/profile-scaled.jpg)
+> Me and my daughter back in August 2016.
