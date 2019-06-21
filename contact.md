@@ -7,5 +7,5 @@ sidebar_sort_order: 5
 ---
 
 <p class="message">
-  Email: me [at] domain [dot] com
+  Email: james [at] jameswatkins [dot] me
 </p>
