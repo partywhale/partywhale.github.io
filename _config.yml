@@ -22,6 +22,9 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ilya_recur
 github_username:  partywhale
 
+# set timezone
+timezone: America/Vancouver
+
 # Build settings
 markdown: kramdown
 kramdown:
