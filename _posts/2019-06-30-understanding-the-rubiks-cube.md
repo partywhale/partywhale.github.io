@@ -11,7 +11,7 @@ You've probably played with a '15 puzzle' or '8 puzzle' sliding puzzle before, a
 
 Sliding puzzles are a form of 2-dimensional combination puzzle. They are 2-dimensional because we slide tiles along two axes (horizontal, or x; vertical, or y), and they are combination puzzles because the objective is to reorder the tiles into a particular combination from a random state. The rules of the game are simple. We move tiles along x and y, swapping pieces until the puzzle is solved. Each tile has one (and only one) position it must occupy to be considered solved. We can't pop tiles out of the board and replace them somewhere else. Of course, the axes are static and don't mysteriously rearrange themselves.
 
-> ![15 Puzzle](/assets/15puzzle-axes.jpg "15 Puzzle")
+> ![15 Puzzle](/assets/15puzzle-axes.png "15 Puzzle")
 > The two axes of the 15 puzzle, x and y..
 
 It's impossible to move a piece around the board without affecting other pieces, since there's only one open space to swap tiles into. As long as our randomized scramble is done from a solved state, the puzzle will always be solvable. If we scramble by popping out the pieces and reinserting them randomly, only half of all possible scrambles will be solvable; our last two pieces can't be flipped without affecting other pieces.
@@ -20,10 +20,10 @@ The above photo of the 15 Puzzle is actually unsolvable - there's no combination
 
 If we know and follow the rules of our sliding puzzle, any scramble that follows those rules is solvable without very much difficulty.
 
-> ![Cube Axes](/assets/rubiks-axes.jpg "Cube Axes")
+> ![Cube Axes](/assets/rubiks-axes.png "Cube Axes")
 > Pieces on the Rubik's cube move by rotating along three axes: x, y, and z. Like the tiles in a sliding puzzle, the pieces of a Rubik's cube are not firmly attached to the axes. They lock into one another, allowing the pieces to move freely between layers. The structural integrity of the puzzle requires that all the pieces be hooked into one another; if one piece is pried out, the whole puzzle can collapse.
 
-The Rubik's cube (or generically, the 'magic cube') is essentially the same puzzle in 3 dimensions. The cube is surrounded by mystery, but is actually very simple when we consider the rules it follows. It has three axes (x, y, z) which the layers of the cube rotate around. The centre pieces of each color are bound to their axis, and never move in relation to one another; yellow is always opposite white, blue opposite green, and red opposite orange. If we place white on top and green in front, the left centre piece will always be orange, and the right centre piece will always be red. Consequently, there is only one position that each piece can occupy to be considered solved: the white-orange-green corner piece _has_ to occupy the corner between the white, orange, and green centres, and the yellow-blue edge piece _has_ to occupy the edge between the yellow and blue centres, and so on.
+The Rubik's cube (or generically, the 'magic cube') is essentially the same puzzle in 3 dimensions. In the public imagination the cube is complicated and surrounded by mystery, but it is actually very simple when we consider the rules it follows. It has three axes (x, y, z) which the layers of the cube rotate around. The centre pieces of each color are bound to their axis, and never move in relation to one another; yellow is always opposite white, blue opposite green, and red opposite orange. If we place white on top and green in front, the left centre piece will always be orange, and the right centre piece will always be red. Consequently, there is only one position that each piece can occupy to be considered solved: the white-orange-green corner piece _has_ to occupy the corner between the white, orange, and green centres, and the yellow-blue edge piece _has_ to occupy the edge between the yellow and blue centres, and so on.
 
 > ![Cube Core](/assets/cubecore.png "Cube Core")
 > The core of a cube (I believe this is from a GAN cube). The centre pieces have been removed, but this firmly demonstrates that the centres cannot move. They only rotate on their axis!
