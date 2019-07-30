@@ -106,7 +106,11 @@ Which gives us the following graph:
 
 So, according to our graph, we have just over a 0.35 probability of having no mount drop, a similar probability of finding the mount exactly once, just under 0.2 probability of finding it twice, and just over 0.05 probability of finding it three times. Other values of k are so small as to be negligible (which is why I haven't calculated all 126 possible values of k). Even without seeing the exact values, this gives us a good sense of relative probabilities for k, and with a little mental arithmetic we know our cumulative probability for k > 0 will be just over 0.6.
 
-We can also use `pbinom()`, which takes the same arguments as `dbinom()`, to plot the cumulative distribution function. This will give us the probability of having k or fewer successes.
+We can also use `pbinom()`, which takes the same arguments as `dbinom()`, to plot the cumulative distribution function. This will give us the probability of having k or fewer successes. The equation for the cumulative distribution function is:
+
+![Binomial Distribution Cumulative Distribution Function](/assets/equations/binomial-cdf.png)
+
+And the code for our plot:
 
 ```R
 y <- pbinom(0:10, 125, 0.008)
@@ -122,7 +126,7 @@ qplot(x, y, colour = I("#F9858F"), size = I(4), shape = I(16)) +
   theme_partywhale()
 ```
 
-And we get the following graph:
+Which gives the following graph:
 
 ![Binomial CDF Graph, n = 125](/assets/wow-graphs/binomial-cdf-125.png)
 
@@ -148,4 +152,4 @@ Here, the probability that we will find greater than 0 mounts (or, 1+ mounts) is
 
 Next we'll use simulations to test our perfect, or 'theoretical', binomial distributions, and take a look at the expected number of failures before a successful mount drop using the geometric distribution. But for now, this post is long enough!
 
-[Onward to Part 2!]() (I'll update this link when it's live.)
+[Onward to Part 2!](/probability/games/2019/07/30/drop-probability-in-games-2.html)
