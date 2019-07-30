@@ -47,10 +47,10 @@ Each run has a 0.008 probability of success (0.8%, or 1/125), so the probability
 
 > 1 - (probability of failure)^number of runs  
 > 1 - (0.992)^125  
-> 1 - 0.336  
+> 1 - 0.366  
 > 0.634
 
-In other words, after 125 runs of the Stratholme dungeon, there is a 63.4% chance we will have seen Deathcharger's Reins drop off Baron Rivendare, and a 33.6% chance we won't see it drop. Or perhaps more accurately, 63.4% of players should see the mount drop by time they have reached 125 runs. If we keep inputting different values for n (number of runs), it's noticable that the relationship between number of runs and probability of success is non-linear. It takes 20 runs to reach 15%, 45 runs to reach 30%, 87 runs to reach 50%, 173 runs to reach 75%, 287 runs to reach 90%, 373 to reach 95%, 574 runs to reach 99%, 861 runs to reach 99.9%, and so on. We'll never reach a probability of 1, except through rounding, because we can't guarantee we'll ever have a success (even a 50/50 coin flip can have a long streak of only-heads or only-tails if we flip enough times).
+In other words, after 125 runs of the Stratholme dungeon, there is a 63.4% chance we will have seen Deathcharger's Reins drop off Baron Rivendare, and a 36.6% chance we won't see it drop. Or perhaps more accurately, 63.4% of players should see the mount drop by time they have reached 125 runs. If we keep inputting different values for n (number of runs), it's noticable that the relationship between number of runs and probability of success is non-linear. It takes 20 runs to reach 15%, 45 runs to reach 30%, 87 runs to reach 50%, 173 runs to reach 75%, 287 runs to reach 90%, 373 to reach 95%, 574 runs to reach 99%, 861 runs to reach 99.9%, and so on. We'll never reach a probability of 1, except through rounding, because we can't guarantee we'll ever have a success (even a 50/50 coin flip can have a long streak of only-heads or only-tails if we flip enough times).
 
 In fact, what we're actually describing is the [binomial distribution](https://en.wikipedia.org/wiki/Binomial_distribution). The probability mass function of the binomial distribution describes the probability of getting a particular number of successes, given a number of attempts with unchanging independent probability of success. The probability mass function for a binomial distribution is:
 
