@@ -15,6 +15,8 @@ This section will probably get bigger as I collect more data.
 
 <iframe width="675" height="428" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQXFBXO5xuU9sBoKcJojmTGAq0YdPoCTdjwKx8iaUetL4BAifaoJGK1uzMeDSpi6r54cAuqUghK90DH/pubchart?oid=176716553&amp;format=interactive"></iframe>
 
+<iframe width="675" height="428" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQXFBXO5xuU9sBoKcJojmTGAq0YdPoCTdjwKx8iaUetL4BAifaoJGK1uzMeDSpi6r54cAuqUghK90DH/pubchart?oid=1648176703&amp;format=interactive"></iframe>
+
 <iframe width="675" height="428" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQXFBXO5xuU9sBoKcJojmTGAq0YdPoCTdjwKx8iaUetL4BAifaoJGK1uzMeDSpi6r54cAuqUghK90DH/pubchart?oid=1243695731&amp;format=interactive"></iframe>
 
 <iframe width="675" height="428" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQXFBXO5xuU9sBoKcJojmTGAq0YdPoCTdjwKx8iaUetL4BAifaoJGK1uzMeDSpi6r54cAuqUghK90DH/pubchart?oid=1871476801&amp;format=interactive"></iframe>
@@ -22,4 +24,8 @@ This section will probably get bigger as I collect more data.
 
 <br />
 ### Buys and Sells
-I don't really have anything to post here yet. I bought 50 turnips at 92 Bells per (4,600 Bells total) on March 22, and sold them all at 147 Bells per (7,350 Bells total) on March 23 AM, making a 2,750 Bell profit (160% increase).
+This will become graphs when I have enough data.  
+
+I bought 50 turnips at 92 Bells per (4,600 Bells total) on March 22, and sold them all at 147 Bells per (7,350 Bells total) on March 23 AM, making a 2,750 Bell profit (160% increase).  
+
+I bought 500 turnips at 99 Bells per (49,500 Bells total) on March 29.
