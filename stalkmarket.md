@@ -11,7 +11,7 @@ Animal Crossing: New Horizons came out on March 20, 2020. This game has an econo
 This is the first time I've played an Animal Crossing game. I've heard a lot about how the Stalk Market worked in previous games. Some people maintain that Tuesdays usually have the best price. Others have found recognizable drop and spike patterns, and claim that paying attention to these can help you minimize losses and maximize earnings. I'm tracking my weekly buy and twice-daily sell prices to find out if there's any truth to these assertions, and hopefully contribute to our knowledge of turnip economics. But also, mostly, to make a buttload of Bells.
 
 ### Price Trends
-This section will probably get bigger as I collect more data.
+Graphs based on the purchase prices given by the Turnip vendor and the selling price given by the Nook store. This section will probably get bigger as I collect more data.
 
 <iframe width="675" height="428" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQXFBXO5xuU9sBoKcJojmTGAq0YdPoCTdjwKx8iaUetL4BAifaoJGK1uzMeDSpi6r54cAuqUghK90DH/pubchart?oid=176716553&amp;format=interactive"></iframe>
 
@@ -24,8 +24,8 @@ This section will probably get bigger as I collect more data.
 
 <br />
 ### Buys and Sells
-This will become graphs when I have enough data.  
+Graphs based on my actual Turnip purchasing and selling. How well am I making decisions about Turnip trade? Note that I'm not using multiplayer features to find better Turnip prices; I'm only using the prices available on my island.
 
-I bought 50 turnips at 92 Bells per (4,600 Bells total) on March 22, and sold them all at 147 Bells per (7,350 Bells total) on March 23 AM, making a 2,750 Bell profit (160% increase).  
+<iframe width="675" height="428" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQXFBXO5xuU9sBoKcJojmTGAq0YdPoCTdjwKx8iaUetL4BAifaoJGK1uzMeDSpi6r54cAuqUghK90DH/pubchart?oid=113690670&amp;format=interactive"></iframe>
 
-I bought 500 turnips at 99 Bells per (49,500 Bells total) on March 29.
+<iframe width="675" height="428" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQXFBXO5xuU9sBoKcJojmTGAq0YdPoCTdjwKx8iaUetL4BAifaoJGK1uzMeDSpi6r54cAuqUghK90DH/pubchart?oid=2103248728&amp;format=interactive"></iframe>
