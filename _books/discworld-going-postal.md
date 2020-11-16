@@ -5,7 +5,7 @@ author: "Terry Pratchett"
 description: Arch-swindler Moist Van Lipwig never believed his confidence crimes were hanging offenses - until he found himself with a noose tightly around his neck, dropping through a trapdoor, and falling into... a government job?
 date: 2015-07-02
 ---
-  
+&nbsp;  
 Have read a bunch of times. Finished again May 21, 2020.  
 
 > They say that the prospect of being hanged in the morning concentrates a man's mind wonderfully; unfortunately, what the mind inevitably concentrates on is that it is in a body that, in the morning, is going to be hanged.
