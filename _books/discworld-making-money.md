@@ -1,10 +1,11 @@
-  ---
+---
 layout: book
 name: "Making Money"
 author: "Terry Pratchett"
 description: It's an offer you can't refuse. Who would not to wish to be the man in charge of Ankh-Morpork's Royal Mint and the bank next door? It's a job for life. But, as former con-man Moist von Lipwig is learning, the life is not necessarily for long.
 date: 2016-02-29
 ---
+  
 Have read a bunch of times. Finished again September 3, 2020.
 
 > Moist looked around, sorting hastily through the Post Office's recent little problems. Apart from Drumknott, who was standing by his master with an attitude of deferential alertness, they were alone.  
