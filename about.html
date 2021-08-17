@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>About &middot; James Watkins</title>
+
+        <link rel="stylesheet" href="css/bulma.css">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicon.png" />
+        <link rel="shortcut icon" href="favicon.ico" />
+
+        <script src="https://kit.fontawesome.com/2aa900dc82.js" crossorigin="anonymous"></script>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/burgermenu.js"></script>
+    </head>
+    <body>
+
+        <!--Navigation bar-->
+        <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item is-size-4" href="https://jameswatkins.me">
+                    <strong>jameswatkins.me</strong>
+                </a>
+          
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="nav-placeholder">
+
+            </div>
+
+            <script>
+                var $ = jQuery.noConflict();
+                $.get("navigation.html", function(data){
+                    $("#nav-placeholder").replaceWith(data);
+                });
+            </script>
+        </nav>
+        <!--end of Navigation bar-->
+
+        <section class="section">
+            <div class="container">
+
+                <div class="content is-large">
+                    <h1 class="title">
+                        About
+                    </h1>
+
+                    <figure class="image">
+                        <img src="img/about.jpg">
+                        <figcaption class="is-size-6">Me and my (first born) daughter back in August 2016. Before the dark times... before the Empire.</figcaption>
+                    </figure>
+                </div>
+
+                <div class="content">
+                    <p>
+                        Hi, I’m James Watkins. I’m originally from Vancouver, British Columbia, <s>but I currently live on Vancouver Island</s> and after seven or so years 
+                        I've somehow found my way back here (my heart's still on the Island, though).
+                        I studied sociology at the University of Victoria where I completed a B.A. (Hons) and M.A. 
+                        Most of my projects were oriented toward gerontology and demography, but I’m always looking to apply my skills and expertise elsewhere!
+                    </p>
+                    <p>
+                        I have many years experience using Stata, SAS, and SPSS for statistical analysis. 
+                        I dabble in Python, JavaScript, and R for hobbyist applications (some of which you might find on this site), but I'm increasingly using these languages
+                        for serious analytic and visualization work, too. 
+                        I like to use Plotly to make pretty (and sometimes interactive) visualizations&mdash;or Datawrapper if I'm feeling lazy. 
+                        I like to mess around with GIS, but I consider myself a newbie on that front. 
+                        I also help my 5-year-old daughter create animations using Scratch Jr (mostly fish races). We even built a Discord bot together using JavaScript!
+                    </p>
+                    <p>
+                        On the hardware side, I typically use the Arduino and Raspbery Pi platforms for electronics and IoT projects. 
+                        I like to take things apart and learn about them, or scavenge spare parts. 
+                        Recently I’ve experimented with LCD transparency, electrochromic materials, and image projection onto glass. 
+                        I build and maintain the desktop computers in my household. 
+                        My homelab doesn’t consist of much at the moment: 
+                        ‘production’ includes Plex, game servers, and some Ubiquiti network gear; 
+                        ‘development’ consists of some old enterprise network equipment, a Raspberry Pi, and an old laptop. 
+                        But hey, I’ll get there eventually.
+                    </p>
+                    <p>
+                        I also do some amateur astronomy. 
+                        In the summer of 2018 I saw Jupiter’s four visible moons (Io, Europa, Ganymede, and Callisto) and Saturn’s rings with my own eyes for the first time. 
+                        I’m currently using a pair of binoculars and a Celestron AstroMaster 130 Newtonian reflector telescope. 
+                        I’m beginning to dabble in astrophotography, but I’m not very good at it yet. 
+                        I like to keep up with dwarf planet and exoplanet news, and I chart nearby star systems in 3D.
+                    </p>
+                    <p>
+                        My favourite authors include J. R. R. Tolkien and Terry Pratchett. <br>
+                        My favourite poets are Siegfried Sassoon and Robert Graves. <br>
+                        My favourite social theorists are Zygmunt Bauman and Pierre Bourdieu.
+                    </p>
+
+                    <h2>
+                        About this site
+                    </h2>
+                    <p>
+                        This site was originally conceived in 2015, but went offline after a year - I simply felt I didn’t have much use for a permanent online presence and had better things to be doing (e.g. grad school). 
+                        Instead, when I felt like sharing a project or write-up, I’d inundate a small Discord community of interested people with messages. 
+                        At some point I realized that Discord is not a great way to store work permanently. Thus, this site.
+                    </p>
+                    <p>
+                        Inaugurated June 19, 2019. Facelift August 14, 2021.
+                    </p>
+                    <p>
+                        This site was built by yours truly, using pure HTML (previously Jekyll on Ruby), <br> 
+                        <a href="https://bulma.io/">Bulma CSS</a>, and a little <a href="https://jquery.com/">jQuery</a> & vanilla JavaScript to soften the edges. <br> 
+                        I use the <a href="https://katex.org/">KaTeX JavaScript library</a> for LaTeX math typesetting. <br>
+                        I use <a href="https://highlightjs.org/">highlight.js</a> for syntax highlighting in code snippets. <br>
+                        Hosting provided by <a href="https://pages.github.com/">GitHub Pages</a>. <br>
+                        See the source code <a href="https://github.com/partywhale/partywhale.github.io">here</a>. <br>
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+
+            <div class="columns">
+                <div class="column">
+                    <div class="content has-text-centered">
+                        <p>
+                            <strong>2019 © James Watkins</strong>
+                        </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content has-text-centered">
+                        <p class="is-size-7">
+                            <strong>Knowledge is power, power is energy, energy is matter, matter is mass, and mass changes time and space. &mdash;Sir Terry Pratchett</strong>
+                        </p>
+                    </div>
+                </div>
+              </div>
+        </footer>
+        <!-- End of footer -->
+
+    </body>
+</html>

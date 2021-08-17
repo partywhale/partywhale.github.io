@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Hello there! &middot; James Watkins</title>
+
+        <link rel="stylesheet" href="css/bulma.css">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicon.png" />
+        <link rel="shortcut icon" href="favicon.ico" />
+
+        <script src="https://kit.fontawesome.com/2aa900dc82.js" crossorigin="anonymous"></script>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/burgermenu.js"></script>
+    </head>
+    <body>
+
+        <!--Navigation bar-->
+        <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item is-size-4" href="https://jameswatkins.me">
+                    <strong>jameswatkins.me</strong>
+                </a>
+          
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="nav-placeholder">
+
+            </div>
+
+            <script>
+                var $ = jQuery.noConflict();
+                $.get("navigation.html", function(data){
+                    $("#nav-placeholder").replaceWith(data);
+                });
+            </script>
+        </nav>
+        <!--end of Navigation bar-->
+
+        <section class="section">
+            <div class="container">
+
+                <div class="content is-large">
+                    <h1 class="title">
+                        James Watkins
+                    </h1>
+                    <p class="subtitle">
+                        Demographer. Analyst. Tinkerer.
+                    </p>
+                </div>
+
+                <div class="columns is-vcentered">
+
+                    <div class="column is-two-thirds">
+                        <div class="content">
+                            <h2>
+                                Hello there!
+                            </h2>
+                            <p>
+                                I’m <strong>James.</strong> I have a Master’s in sociology from the University of Victoria, where I studied demography. 
+                                My thesis examined the health and well-being of caregivers who provide emotional support in high-stress situations. 
+                                I currently do institutional research at a university, where I'm primarily involved in research design, analysis, and data visualization. 
+                                I'm always seeking new ways to look at&mdash;and effectively communicate&mdash;our data.
+                                But that’s not all I do!
+                            </p>
+                            <p>
+                                In my spare time I like to mess around with microcontrollers, single-board computers, and other electronics. 
+                                I’m an amateur astronomer (currently using a Celestron AstroMaster 130). 
+                                I’m interested in <a href="https://www.reddit.com/r/homelab/">homelabbing</a> and <a href="https://www.reddit.com/r/selfhosted/">self-hosting</a> to better 
+                                understand system administration. 
+                                I like to garden, and make pizza by hand. 
+                                And I write a demography blog about some of the quirkier issues.
+                                My nose is often burried in a book (currently reading <i>Good Omens</i>), and my hands are usually occupied 
+                                by a Rubik’s Cube or other twisty-puzzle (my best 3x3 time is 24.78 seconds). 
+                                Frequently I’m doing any of the things listed on this site with my 5-year-old daughter, who always needs to know ‘why?’.
+                            </p>
+                            <p>
+                                This website is a place for me to share things. Maybe I’m documenting an electronics project. 
+                                Maybe I want to share a Python script. Or maybe there’s just a recipe I don’t want to forget.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="column is-one-third">
+                        <div class="content">
+                            <figure class="image">
+                                <img class="is-rounded" src="img/profile-sqr.jpg">
+                            </figure>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+
+                <div class="content">
+                    <h2>Project Highlights</h2>
+                </div>
+                
+                <div class="tile is-ancestor">
+                    <div class="tile is-parent is-one-third">
+                        <div class="tile is-child notification is-primary">
+                            <p class="title">
+                                <a href="/posts/stalk-market.html">
+                                    Stalk Market
+                                </a>
+                            </p>
+                            <p class="subtitle">
+                                April 2, 2020
+                            </p>
+                            <p>An attempt to collect data on price trends in the 'Stalk Market' mechanic of Animal Crossing: New Horizons.</p>
+                        </div>
+                    </div>
+
+                    <div class="tile is-parent is-one-third">
+                        <div class="tile is-child notification is-warning">
+                            <p class="title">
+                                <a href="/posts/baking-perfect-bacon.html">
+                                    Baking Perfect Bacon
+                                </a>
+                            </p>
+                            <p class="subtitle">
+                                August 3, 2019
+                            </p>
+                            <p>I keep forgetting at what temperature and for how long to cook bacon. Instructions are here for eternal referencing.</p>
+                        </div>
+                    </div>
+
+                    <div class="tile is-parent is-one-third">
+                        <div class="tile is-child notification is-danger">
+                            <p class="title">
+                                <a href="/posts/understanding-the-rubiks-cube.html">
+                                    Understanding the Rubik’s Cube
+                                </a>
+                            </p>
+                            <p class="subtitle">
+                                June 30, 2019
+                            </p>
+                            <p>Breaking down the mechanics of the Rubik's Cube. I go over how it works, and how many possible scramble combinations exist.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tile is-ancestor">
+                    <div class="tile is-parent is-one-third">
+                        <div class="tile is-child notification is-link">
+                            <p class="title">
+                                <a href="/posts/drop-probability-in-games.html">
+                                    The Probability Distribution of Item Drops in Video Games, Part 1
+                                </a>
+                            </p>
+                            <p class="subtitle">
+                                July 22, 2019
+                            </p>
+                            <p>There is some confusion in online video game communities about how probability works, particularly in regard to item drop chances.
+                                This seems to happen wherever players have a very low chance of obtaining something they want, and are willing to play through content repeatedly to obtain it.
+                                This post attempts to clear things up.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="tile is-parent is-one-third">
+                        <div class="tile is-child notification is-success">
+                            <p class="title">
+                                <a href="/posts/drop-probability-in-games-2.html">
+                                    The Probability Distribution of Item Drops in Video Games, Part 2
+                                </a>
+                            </p>
+                            <p class="subtitle">
+                                July 30, 2019
+                            </p>
+                            <p>A sequel to my original post on game drop chances, I use simulations to demonstrate the theory in the original.</p>
+                        </div>
+                    </div>
+
+                    <div class="tile is-parent is-one-third">
+                        <div class="tile is-child notification is-info">
+                            <p class="title">
+                                <a href="/posts/converting-equatorial-to-cartesian.html">
+                                    Converting Equatorial Celestial Coordinates to a Cartesian System
+                                </a>
+                            </p>
+                            <p class="subtitle">
+                                June 22, 2019
+                            </p>
+                            <p>Celestial coordinates are usually given in an equatorial coordinates system, utilizing right ascension and declination, or their location relative to Earth. 
+                                This is useful for finding stars in the night sky on Earth, but not from other locations. What if we were on a planet orbiting Aldebaran, and needed to find 
+                                a particular star from this different vantage point? Or wanted to find the distance between two stars, rather than the distance of each star from Earth? 
+                                Cartesian coordinates (x, y, z) are much more flexible for this purpose.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <footer class="footer">
+
+            <div class="columns">
+                <div class="column">
+                    <div class="content has-text-centered">
+                        <p>
+                            <strong>2019 © James Watkins</strong>
+                        </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content has-text-centered">
+                        <p class="is-size-7">
+                            <strong>(General Kenobi!)</strong>
+                        </p>
+                    </div>
+                </div>
+              </div>
+        </footer>
+
+    </body>
+</html>

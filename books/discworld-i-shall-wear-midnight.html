@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>I Shall Wear Midnight &middot; James Watkins</title>
+
+        <link rel="stylesheet" href="/css/bulma.css">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/favicon.png" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+
+        <script src="https://kit.fontawesome.com/2aa900dc82.js" crossorigin="anonymous"></script>
+        <script src="/js/jquery-3.6.0.min.js"></script>
+        <script src="/js/burgermenu.js"></script>
+    </head>
+    <body>
+
+        <!--Navigation bar-->
+        <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item is-size-4" href="https://jameswatkins.me">
+                    <strong>jameswatkins.me</strong>
+                </a>
+          
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="nav-placeholder">
+
+            </div>
+
+            <script>
+                var $ = jQuery.noConflict();
+                $.get("/navigation.html", function(data){
+                    $("#nav-placeholder").replaceWith(data);
+                });
+            </script>
+        </nav>
+        <!--end of Navigation bar-->
+
+        <section class="section">
+            <div class="container">
+
+                <div class="content is-large">
+                    <h1 class="title">
+                        I Shall Wear Midnight
+                    </h1>
+                </div>
+                
+                <div class="content">
+                    <h2>
+                        Terry Pratchett
+                    </h2>
+                    <p class="subtitle">
+                        Finished on October 22, 2020
+                    </p>
+                    <p>
+                        Somewhere - some time - there’s a tangled ball of evil and spite, of hatred and malice, that has woken up. 
+                        And it’s waking up all the old stories too - stories about evil old witches…
+                    </p>
+
+                    <blockquote>
+                        <p>It was a shame that Nanny lived right up in the mountains, because she would have loved the scouring and Tiffany would have loved to see her face when she saw the giant.<br />
+                        He — and he was quite definitely a he, there was no possible doubt about that — had been carved out of the turf thousands of years before. A white outline against the green, he belonged to the days when people had to think about survival and fertility in a dangerous world.<br />
+                        Oh, and he had also been carved, or so it would appear, before anyone had invented trousers. In fact, to say that he had no trousers on just didn’t do the job. His lack of trousers filled the world. You simply could not stroll down the little road that passed along the bottom of the hills without noticing that there was an enormous, as it were, lack of something — e.g. trousers — and what was there instead. It was definitely a figure of a man without trousers, and certainly not a woman.<br />
+                        Everyone who came to the scouring was expected to bring a small shovel, or even a knife, and work their way down the steep slope to grub up all the weeds that had grown there over the previous year, making the chalk underneath glow with freshness and the giant stand out boldly, as if he wasn’t already.</p>
+                    </blockquote>
+                      
+                    <blockquote>
+                        <p>The forget-me-lots is a pretty red and white flower usually given by young ladies to signal to their young men that they never wanted to see them again ever, or at least until they’d learned to wash properly and got a job.</p>
+                    </blockquote>
+                      
+                    <blockquote>
+                        <p>She had heard it said that, before you could understand anybody, you needed to walk a mile in their shoes, which did not make a whole lot of sense because, probably <em>after</em> you had walked a mile in their shoes you would understand that they were chasing you and accusing you of the theft of a pair of shoes — although, of course, you could probably outrun them owing to their lack of footwear.</p>
+                    </blockquote>
+                      
+                    <blockquote>
+                        <p>‘A man of power and responsibility nevertheless needs someone to tell him when he is being a bloody fool. Granny Aching fulfilled that task with commendable enthusiasm, I must say. And she needed to, because I was often a bloody fool who needed a kick up the arse, metaphorically speaking. It is my hope, Miss Tiffany Aching, that when I am in my grave you will perform the same service to my son Roland who, as you know, is inclined to be a bit too full of himself at times. He will need somebody to kick him up the arse, metaphorically speaking, or indeed in real life if he gets altogether too snotty.’</p>
+                    </blockquote>
+                      
+                    <blockquote>
+                        <p>On the whole there wasn’t a great deal of difference between the chickens and the Feegles, since both run around in circles making a noise. An important distinction, however, is that chickens are seldom armed.</p>
+                    </blockquote>
+                      
+                    <blockquote>
+                        <p>She woke up on fire. Flames filled the entire room, flickering orange and red but burning as gently as the kitchen stove. There was no smoke, and although the room felt warm, nothing was actually burning. It was as if fire had just dropped in for a friendly visit, not for business.</p>
+                    </blockquote>
+                      
+                    <blockquote>
+                        <p>There is something very wrong about this place, thought Tiffany. Something … strained … straining. Maybe it’s all the knowledge in the books, just bursting to get out. She had heard talk of the library at Unseen University — of the soulful books all pressed together in space and time so that at night, it was said, they spoke to one another and a kind of lightning flashed from book to book. Too many books in one place, who knew what they could do? Miss Tick had told her one day: ‘Knowledge is power, power is energy, energy is matter, matter is mass, and mass changes time and space.’</p>
+                    </blockquote>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+
+            <div class="columns">
+                <div class="column">
+                    <div class="content has-text-centered">
+                        <p>
+                            <strong>2019 © James Watkins</strong>
+                        </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content has-text-centered">
+                        <p class="is-size-7">
+                            <strong>Knowledge is power, power is energy, energy is matter, matter is mass, and mass changes time and space. &mdash;Sir Terry Pratchett</strong>
+                        </p>
+                    </div>
+                </div>
+              </div>
+        </footer>
+        <!-- End of footer -->
+
+    </body>
+</html>

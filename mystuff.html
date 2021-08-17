@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>My Stuff &middot; James Watkins</title>
+
+        <link rel="stylesheet" href="css/bulma.css">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicon.png" />
+        <link rel="shortcut icon" href="favicon.ico" />
+
+        <script src="https://kit.fontawesome.com/2aa900dc82.js" crossorigin="anonymous"></script>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/burgermenu.js"></script>
+    </head>
+    <body>
+
+        <!--Navigation bar-->
+        <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item is-size-4" href="https://jameswatkins.me">
+                    <strong>jameswatkins.me</strong>
+                </a>
+          
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="nav-placeholder">
+
+            </div>
+
+            <script>
+                var $ = jQuery.noConflict();
+                $.get("navigation.html", function(data){
+                    $("#nav-placeholder").replaceWith(data);
+                });
+            </script>
+        </nav>
+        <!--end of Navigation bar-->
+
+        <section class="section">
+            <div class="container">
+
+                <div class="content is-large">
+                    <h1 class="title">
+                        Behold! My Stuff.
+                    </h1>
+                    <p class="subtitle">
+                        Things I’ve done and taken the time to write about, or other notes.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="content">
+                    
+                    <!-- Add new posts here -->
+
+                    <div class="tile is-ancestor">
+                        <div class="tile is-parent">
+                            <div class="tile is-child notification is-warning">
+                                <p class="title">
+                                    <a href="/posts/stalk-market.html">
+                                    Stalk Market
+                                    </a>
+                                </p>
+                                <p class="subtitle">
+                                    April 2, 2020 &middot; Games
+                                </p>
+                                <p>
+                                    Animal Crossing: New Horizons came out on March 20, 2020. This game has an economic mechanic called the "Stalk Market". Every Sunday, a character shows up on your 
+                                    island selling turnips. The price of these turnips is randomized and unique to each player's island; on March 22 (the first possible date turnips were available), 
+                                    my turnip buy price was 92 Bells (Bells is the usual Animal Crossing currency). Monday through Saturday, you can sell these turnips back to the regular island vendor, 
+                                    but the price varies: each day has a random price in the morning (8:00-11:59) and another price in the afternoon (12:00-21:59). The goal is to sell back the turnips at 
+                                    a favourble rate, earning profit and avoiding losses. You can't hold out too long, because the turnips will go rotten on the next Sunday.
+                                </p>
+                                <p>
+                                    <a href="/posts/stalk-market.html">
+                                    More...
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tile is-ancestor">
+                        <div class="tile is-parent">
+                            <div class="tile is-child notification is-primary">
+                                <p class="title">
+                                    <a href="/posts/baking-perfect-bacon.html">
+                                    Baking Perfect Bacon
+                                    </a>
+                                </p>
+                                <p class="subtitle">
+                                    August 3, 2019 &middot; Food
+                                </p>
+                                <p>
+                                    I keep forgetting at what temperature and for how long to cook bacon.
+                                </p>
+                                <p>
+                                    <a href="/posts/baking-perfect-bacon.html">
+                                    More...
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="tile is-ancestor">
+                        <div class="tile is-parent">
+                            <div class="tile is-child notification is-info">
+                                <p class="title">
+                                    <a href="/posts/drop-probability-in-games-2.html">
+                                    The Probability Distribution of Item Drops in Video Games, Part 2
+                                    </a>
+                                </p>
+                                <p class="subtitle">
+                                    July 30, 2019 &middot; Statistics & Probability &middot; R
+                                </p>
+                                <p>
+                                    In Part 1, we explored probability by calculating our chances of finding Rivendare’s Deathcharger in World of Warcraft’s Stratholme dungeon, 
+                                    and explored the binomial distribution. Now, we’ll use simulations to test the ‘theoretical’ distribution we generated, and take a look at the 
+                                    expected number of failures before a successful mount drop using the geometric distribution.
+                                </p>
+                                <p>
+                                    <a href="/posts/drop-probability-in-games-2.html">
+                                    More...
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="tile is-ancestor">
+                        <div class="tile is-parent">
+                            <div class="tile is-child notification is-danger">
+                                <p class="title">
+                                    <a href="/posts/drop-probability-in-games.html">
+                                    The Probability Distribution of Item Drops in Video Games, Part 1
+                                    </a>
+                                </p>
+                                <p class="subtitle">
+                                    July 22, 2019 &middot; Statistics & Probability &middot; R
+                                </p>
+                                <p>
+                                    There is some confusion in online video game communities about how probability works, particularly in regard to item drop chances. 
+                                    This seems to happen wherever players have a very low chance of obtaining something they want, and are willing to play through content repeatedly to obtain it. 
+                                    I’ve noticed this in Path of Exile with the Labyrinth enchantments, where there are 362 possible helmet enchantments, each with an equal probability of occuring 
+                                    (or a 1/362 chance of any particular enchantment occuring). This also happens in World of Warcraft (WoW), where many of the highly prized mounts have a 0.5-4% 
+                                    chance of dropping in a dungeon or raid playthrough.
+                                </p>
+                                <p>
+                                    <a href="/posts/drop-probability-in-games.html">
+                                    More...
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tile is-ancestor">
+                        <div class="tile is-parent">
+                            <div class="tile is-child notification is-success">
+                                <p class="title">
+                                    <a href="/posts/understanding-the-rubiks-cube.html">
+                                    Understanding the Rubik’s Cube
+                                    </a>
+                                </p>
+                                <p class="subtitle">
+                                    June 30, 2019 &middot; Puzzles
+                                </p>
+                                <p>
+                                    You’ve probably played with a ‘15 puzzle’ or ‘8 puzzle’ sliding puzzle before, and likely even solved it. 
+                                    I’ve owned many cheap plastic 8 puzzles over the years, since they were a staple of birthday party goodie-bags. 
+                                    An 8-year-old can figure out the 8 puzzle within a couple of minutes. 
+                                    If you’re not familiar, sliding puzzles involve sliding numbered tiles around a board until the numbers are in order (top to bottom, left to right), 
+                                    with the blank space in the bottom-right corner.
+                                </p>
+                                <p>
+                                    <a href="/posts/understanding-the-rubiks-cube.html">
+                                    More...
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="tile is-ancestor">
+                        <div class="tile is-parent">
+                            <div class="tile is-child notification is-link">
+                                <p class="title">
+                                    <a href="/posts/cartesian-coordinate-function.html">
+                                    A Cartesian Celestial Coordinate Function in Python
+                                    </a>
+                                </p>
+                                <p class="subtitle">
+                                    June 26, 2019 &middot; Python &middot; Astronomy
+                                </p>
+                                <p>
+                                    As an addendum to my recent post on converting equatorial celestial coordinates to Cartesian coordinates (x, y, z), I wrote a small Python function to demonstrate. 
+                                    It takes right ascension in hours, minutes, and seconds; declination in degrees, hours, and seconds; and distance. 
+                                    It returns x y z coordinates as a tuple (but it would be easy to turn into another data type).
+                                </p>
+                                <p>
+                                    <a href="/posts/cartesian-coordinate-function.html">
+                                    More...
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="tile is-ancestor">
+                        <div class="tile is-parent">
+                            <div class="tile is-child notification is-warning">
+                                <p class="title">
+                                    <a href="/posts/converting-equatorial-to-cartesian.html">
+                                    Converting Equatorial Celestial Coordinates to a Cartesian System
+                                    </a>
+                                </p>
+                                <p class="subtitle">
+                                    June 22, 2019 &middot; Astronomy
+                                </p>
+                                <p>
+                                    Celestial coordinates are usually given in an equatorial coordinates system, utilizing right ascension and declination, or their location relative to Earth. 
+                                    This is useful for finding stars in the night sky on Earth, but not from other locations. What if we were on a planet orbiting Aldebaran, and needed to find 
+                                    a particular star from this different vantage point? Or wanted to find the distance between two stars, rather than the distance of each star from Earth? 
+                                    Cartesian coordinates (x, y, z) are much more flexible for this purpose.
+                                </p>
+                                <p>
+                                    <a href="/posts/converting-equatorial-to-cartesian.html">
+                                    More...
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tile is-ancestor">
+                        <div class="tile is-parent">
+                            <div class="tile is-child notification is-primary">
+                                <p class="title">
+                                    <a href="/posts/hello-world.html">
+                                    Hello World
+                                    </a>
+                                </p>
+                                <p class="subtitle">
+                                    June 19, 2019 &middot; Python
+                                </p>
+                                <p>
+                                    This is the first post. I needed something to fill this space.
+                                </p>
+                                <p>
+                                    <a href="/posts/hello-world.html">
+                                    More...
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                <!-- End of posts -->
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+
+            <div class="columns">
+                <div class="column">
+                    <div class="content has-text-centered">
+                        <p>
+                            <strong>2019 © James Watkins</strong>
+                        </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content has-text-centered">
+                        <p class="is-size-7">
+                            <strong>That is a very graphic analogy which aids understanding wonderfully while being, strictly speaking, wrong in every possible way. &mdash;Sir Terry Pratchett</strong>
+                        </p>
+                    </div>
+                </div>
+              </div>
+        </footer>
+        <!-- End of footer -->
+
+    </body>
+</html>

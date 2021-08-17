@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Hello World &middot; James Watkins</title>
+
+        <link rel="stylesheet" href="/css/bulma.css">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/favicon.png" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+
+        <script src="https://kit.fontawesome.com/2aa900dc82.js" crossorigin="anonymous"></script>
+        <script src="/js/jquery-3.6.0.min.js"></script>
+        <script src="/js/burgermenu.js"></script>
+
+        <!--Load Highlight.js for code snippet syntax highlighting-->
+        <link rel="stylesheet" href="/highlight/styles/atom-one-dark.min.css">
+        <script src="/highlight/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+        <!--End Highlight.js-->
+    </head>
+    <body>
+
+        <!--Navigation bar-->
+        <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item is-size-4" href="https://jameswatkins.me">
+                    <strong>jameswatkins.me</strong>
+                </a>
+          
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="nav-placeholder">
+
+            </div>
+
+            <script>
+                var $ = jQuery.noConflict();
+                $.get("/navigation.html", function(data){
+                    $("#nav-placeholder").replaceWith(data);
+                });
+            </script>
+        </nav>
+        <!--end of Navigation bar-->
+
+        <section class="section">
+            <div class="container">
+
+                <div class="content is-large">
+                    <h1 class="title">
+                        Hello World
+                    </h1>
+                    <p class="subtitle">
+                        June 19, 2019 &middot; Python
+                    </p>
+                </div>
+                
+                <div class="content">
+                    <p>This is the first post. I needed something to fill this space.</p>
+
+                    <p>Here I am testing the code snippet functionality with a very simple Python ‘Hello World’ program:</p>
+
+<pre><code class="highlight-python">print('Hello world!')
+#=> prints 'Hello world!'.</code></pre>
+
+                    <p>Or a little more complicated:</p>
+
+<pre><code class="highlight-python">def helloWorld():
+    print('Hello world!')
+for x in range(1):
+    helloWorld()
+#=> prints 'Hello world!'.</code></pre>
+
+                    <p>Nice.</p>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+
+            <div class="columns">
+                <div class="column">
+                    <div class="content has-text-centered">
+                        <p>
+                            <strong>2019 © James Watkins</strong>
+                        </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content has-text-centered">
+                        <p class="is-size-7">
+                            <strong>Knowledge is power, power is energy, energy is matter, matter is mass, and mass changes time and space. &mdash;Sir Terry Pratchett</strong>
+                        </p>
+                    </div>
+                </div>
+              </div>
+        </footer>
+        <!-- End of footer -->
+
+    </body>
+</html>

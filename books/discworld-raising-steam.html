@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Raising Steam &middot; James Watkins</title>
+
+        <link rel="stylesheet" href="/css/bulma.css">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/favicon.png" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+
+        <script src="https://kit.fontawesome.com/2aa900dc82.js" crossorigin="anonymous"></script>
+        <script src="/js/jquery-3.6.0.min.js"></script>
+        <script src="/js/burgermenu.js"></script>
+    </head>
+    <body>
+
+        <!--Navigation bar-->
+        <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item is-size-4" href="https://jameswatkins.me">
+                    <strong>jameswatkins.me</strong>
+                </a>
+          
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="nav-placeholder">
+
+            </div>
+
+            <script>
+                var $ = jQuery.noConflict();
+                $.get("/navigation.html", function(data){
+                    $("#nav-placeholder").replaceWith(data);
+                });
+            </script>
+        </nav>
+        <!--end of Navigation bar-->
+
+        <section class="section">
+            <div class="container">
+
+                <div class="content is-large">
+                    <h1 class="title">
+                        Raising Steam
+                    </h1>
+                </div>
+                
+                <div class="content">
+                    <h2>
+                        Terry Pratchett
+                    </h2>
+                    <p class="subtitle">
+                        Finished on March 26, 2016
+                    </p>
+                    <p>
+                        To the consternation of the patrician, Lord Vetinari, a new invention has arrived in Ankh-Morpork, a great clanging monster of a machine that harnesses 
+                        the power of all the elements - earth, air, fire and water. This being Ankh-Morpork, it’s soon drawing astonished crowds, some of whom caught the zeitgeist 
+                        early and arrive armed with notepads and very sensible rainwear. Moist von Lipwig is not a man who enjoys hard work - as master of the Post Office, the Mint 
+                        and the Royal Bank his input is, of course, vital… but largely dependent on words, which are fortunately not very heavy and don’t always need greasing. 
+                        However, he does enjoy being alive, which makes a new job offer from Vetinari hard to refuse.
+                    </p>
+                    <p>
+                        Have read a bunch of times. Finished again January 20, 2021.
+                    </p>
+
+                    <blockquote>
+                        <p>Lord Vetinari dribbled the last drop of brandy into his glass and said cheerfully, 'Madam, only a fool would try to stop the progress of the multitude. <em>Vox populi, vox deorum</em>, carefully shepherded by a thoughtful prince, of course. And so I take the view that when it's steam engine time steam engines will come.'</p>
+                    </blockquote>
+
+                    <blockquote>
+                        <p>There was a difference between a banker and a crook, there really was, and although it was very, very teeny Moist felt that he should point out that it did exist and, besides, Lord Vetinari always had his eye on him.</p>
+                    </blockquote>
+
+                    <blockquote>
+                        <p>Lord Vetinari stepped up his pace and continued, 'And what is it that we can take away from all this, I fail to hear you ask? Well, I shall tell you. What the wise man will take away is a certainty that any favour is worth doing for a good boss, and I, Mister Lipwig, am a most exemplary and forbearing employer. This is apparent from the circumstance that <em>your</em> head is still clearly resting on <em>your</em> shoulders despite the fact that it might possibly be in, oh, so many other places, as it were.'</p>
+                    </blockquote>
+
+                    <blockquote>
+                        <p>The Archchancellor burst out laughing. 'Young man, a wizard's robe is impervious to fire. Good grief, if they weren't we'd be burned alive every day before elevenses!'</p>
+                    </blockquote>
+
+                    <blockquote>
+                        <p>His brother watched in admiration and a certain amount of trepidation, or it would have been trepidation had he known the word existed.</p>
+                    </blockquote>
+
+                    <blockquote>
+                        <p>But a kind of ratchet formed in people's minds: here is the new thing and here it is. And yesterday you never thought about it and after today you don't know what you would do without it. That was what the technology was doing. It was your slave but, in a sense, it might be the other way round.</p>
+                    </blockquote>
+
+                    <blockquote>
+                        <p>But it didn't do to get angry, at least not yet. Anger was a weapon to be honed and treasured and used only at the moment yielding most premium.</p>
+                    </blockquote>
+
+                    <blockquote>
+                        <p>'There have been certain clashes of opinion, your majesty,' he said, pointing to several dwarfs being treated in what would have been an impromptu field hospital had it been in a field.</p>
+                    </blockquote>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+
+            <div class="columns">
+                <div class="column">
+                    <div class="content has-text-centered">
+                        <p>
+                            <strong>2019 © James Watkins</strong>
+                        </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content has-text-centered">
+                        <p class="is-size-7">
+                            <strong>Knowledge is power, power is energy, energy is matter, matter is mass, and mass changes time and space. &mdash;Sir Terry Pratchett</strong>
+                        </p>
+                    </div>
+                </div>
+              </div>
+        </footer>
+        <!-- End of footer -->
+
+    </body>
+</html>

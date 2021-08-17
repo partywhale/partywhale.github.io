@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The Fifth Elephant &middot; James Watkins</title>
+
+        <link rel="stylesheet" href="/css/bulma.css">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/favicon.png" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+
+        <script src="https://kit.fontawesome.com/2aa900dc82.js" crossorigin="anonymous"></script>
+        <script src="/js/jquery-3.6.0.min.js"></script>
+        <script src="/js/burgermenu.js"></script>
+    </head>
+    <body>
+
+        <!--Navigation bar-->
+        <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item is-size-4" href="https://jameswatkins.me">
+                    <strong>jameswatkins.me</strong>
+                </a>
+          
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="nav-placeholder">
+
+            </div>
+
+            <script>
+                var $ = jQuery.noConflict();
+                $.get("/navigation.html", function(data){
+                    $("#nav-placeholder").replaceWith(data);
+                });
+            </script>
+        </nav>
+        <!--end of Navigation bar-->
+
+        <section class="section">
+            <div class="container">
+
+                <div class="content is-large">
+                    <h1 class="title">
+                        The Fifth Elephant
+                    </h1>
+                </div>
+                
+                <div class="content">
+                    <h2>
+                        Terry Pratchett
+                    </h2>
+                    <p class="subtitle">
+                        Finished on October 8, 2019
+                    </p>
+                    <p>
+                        A few days ago Sam Vimes was a copper. An important copper, true - chief of police - but still, at his core, a policeman. 
+                        But today he is an ambassador - to the mysterious, fat-rich country of Uberwald. Today Sam Vimes is also a man on the run.
+                    </p>
+
+                    <blockquote>
+                        <p>Vimes had once discussed the Ephebian idea of ‘democracy’ with Carrot, and had been rather interested in the idea that everyone had a vote until he found out that while he, Vimes, would have a vote, there was no way in the rules that anyone could prevent Nobby Nobs from having one as well. Vimes could see the flaw there straight away.</p>
+                    </blockquote>
+                      
+                    <blockquote>
+                        <p>He took his hands off the oars and pulled in the mooring rope. If I make a couple of loops, he thought, I can strap the axe onto my back. He had a mental picture of what could happen to a man who plunged into the cauldron below a waterfall with a sharp piece of metal attached to his body.<br />
+                        GOOD MORNING.<br />
+                        Vimes blinked. A tall dark robed figure was now sitting in the boat.<br />
+                        ‘Are you Death?’<br />
+                        IT’S THE SCYTHE, ISN’T IT? PEOPLE ALWAYS NOTICE THE SCYTHE.<br />
+                        ‘I’m going to die?’<br />
+                        POSSIBLY.<br />
+                        ‘Possibly? You turn up when people are possibly going to die?’<br />
+                        OH YES. IT’S QUITE THE NEW THING. IT’S BECAUSE OF THE UNCERTAINTY PRINCIPLE.<br />
+                        ‘What’s that?’<br />
+                        I’M NOT SURE.<br />
+                        ‘That’s very helpful.’</p>
+                    </blockquote>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+
+            <div class="columns">
+                <div class="column">
+                    <div class="content has-text-centered">
+                        <p>
+                            <strong>2019 © James Watkins</strong>
+                        </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content has-text-centered">
+                        <p class="is-size-7">
+                            <strong>Knowledge is power, power is energy, energy is matter, matter is mass, and mass changes time and space. &mdash;Sir Terry Pratchett</strong>
+                        </p>
+                    </div>
+                </div>
+              </div>
+        </footer>
+        <!-- End of footer -->
+
+    </body>
+</html>

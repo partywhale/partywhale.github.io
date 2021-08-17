@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Unseen Academicals &middot; James Watkins</title>
+
+        <link rel="stylesheet" href="/css/bulma.css">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/favicon.png" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+
+        <script src="https://kit.fontawesome.com/2aa900dc82.js" crossorigin="anonymous"></script>
+        <script src="/js/jquery-3.6.0.min.js"></script>
+        <script src="/js/burgermenu.js"></script>
+    </head>
+    <body>
+
+        <!--Navigation bar-->
+        <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item is-size-4" href="https://jameswatkins.me">
+                    <strong>jameswatkins.me</strong>
+                </a>
+          
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="nav-placeholder">
+
+            </div>
+
+            <script>
+                var $ = jQuery.noConflict();
+                $.get("/navigation.html", function(data){
+                    $("#nav-placeholder").replaceWith(data);
+                });
+            </script>
+        </nav>
+        <!--end of Navigation bar-->
+
+        <section class="section">
+            <div class="container">
+
+                <div class="content is-large">
+                    <h1 class="title">
+                        Unseen Academicals
+                    </h1>
+                </div>
+                
+                <div class="content">
+                    <h2>
+                        Terry Pratchett
+                    </h2>
+                    <p class="subtitle">
+                        Finished on October 4, 2020
+                    </p>
+                    <p>
+                        Football has come to the ancient city of Ankh-Morpork. 
+                        And now, the wizards of Unseen University must win a football match, without using magic, so they’re in the mood for trying anything else. 
+                        This is not going to be a gentleman’s game.
+                    </p>
+
+                    <blockquote>
+                        <p>The bottom of this catenary couch is held off the floor by a mulch of very cheap, yellowing romantic novels of the kind to which the word ‘bodice’ comes naturally. She would die if anyone found out, or possibly they will die if she finds out that they have found out.</p>
+                    </blockquote>
+                      
+                    <blockquote>
+                        <p>It is a well-known fact in any organization that, if you want a job done, you should give it to someone who is already very busy. It has been the cause of a number of homicides, and in one case the death of a senior director from having his head shut repeatedly in quite a small filing cabinet.</p>
+                    </blockquote>
+                      
+                    <blockquote>
+                        <p>'’ow do I know I can trust you?’ said the urchin.<br />
+                        ‘I don’t know,’ said Ridcully. ‘The subtle workings of the brain are a mystery to me, too. But I’m glad that is your belief.’</p>
+                    </blockquote>
+                      
+                    <blockquote>
+                        <p>It has been said that crowds are stupid, but mostly they are simply confused, since as an eyewitness the average person is as reliable as a meringue lifejacket.</p>
+                    </blockquote>
+                      
+                    <blockquote>
+                        <p>‘What? What?’<br />
+                        ‘I fort you was goin’ to stab ‘im!’<br />
+                        ‘I just happened to be holding a knife. You are holding a knife. We hold knives. This is a kitchen.’</p>
+                    </blockquote>
+                      
+                    <blockquote>
+                        <p>‘If he was a fool, then any man who has ever climbed a mountain or swum a torrent is a fool. If he was a fool then so was the man who first tried to tame fire. If he was a fool then so was the man who tried the first oyster, he was a fool, too — although I’m bound to remark that, given the division of labour in early hunter-gatherer cutures, he was probably a woman as well.</p>
+                    </blockquote>
+                      
+                    <blockquote>
+                        <p>‘How many languages do you speak, you … Nutt?’<br />
+                        ‘Three dead and twelve living, sir,’ said Nutt.<br />
+                        ‘Really. Really,’ said Ridcully, as though filing this away and trying not to think <em>How many of them were alive before you murdered them?</em></p>
+                    </blockquote>
+                      
+                    <blockquote>
+                        <p>Juliet’s version of cleanliness was next to godliness, which is to say it was erratic, past all understanding and was seldom seen.</p>
+                    </blockquote>
+                      
+                    <blockquote>
+                        <p>He crouched down and put his ear to the Librarian’s chest. ‘I don’t think he’s been poisoned,’ he said.<br />
+                        ‘Why’s that, Archchancellor?’ said Ponder.<br />
+                        ‘Because if anyone has poisoned our Librarian,’ said Ridcully, ‘then, although I am not, by nature, a vindictive man, I will see to it that this university hunts down the poisoner by every thaumic, mystic and occult means available and makes the rest of their life not only as horrible as they can imagine it, but as horrible as I can imagine it. And you can depend on it, gentlemen, that I have already started work on it.’</p>
+                    </blockquote>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+
+            <div class="columns">
+                <div class="column">
+                    <div class="content has-text-centered">
+                        <p>
+                            <strong>2019 © James Watkins</strong>
+                        </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content has-text-centered">
+                        <p class="is-size-7">
+                            <strong>Knowledge is power, power is energy, energy is matter, matter is mass, and mass changes time and space. &mdash;Sir Terry Pratchett</strong>
+                        </p>
+                    </div>
+                </div>
+              </div>
+        </footer>
+        <!-- End of footer -->
+
+    </body>
+</html>

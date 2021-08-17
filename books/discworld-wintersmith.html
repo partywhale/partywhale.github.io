@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Wintersmith &middot; James Watkins</title>
+
+        <link rel="stylesheet" href="/css/bulma.css">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/favicon.png" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+
+        <script src="https://kit.fontawesome.com/2aa900dc82.js" crossorigin="anonymous"></script>
+        <script src="/js/jquery-3.6.0.min.js"></script>
+        <script src="/js/burgermenu.js"></script>
+    </head>
+    <body>
+
+        <!--Navigation bar-->
+        <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item is-size-4" href="https://jameswatkins.me">
+                    <strong>jameswatkins.me</strong>
+                </a>
+          
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="nav-placeholder">
+
+            </div>
+
+            <script>
+                var $ = jQuery.noConflict();
+                $.get("/navigation.html", function(data){
+                    $("#nav-placeholder").replaceWith(data);
+                });
+            </script>
+        </nav>
+        <!--end of Navigation bar-->
+
+        <section class="section">
+            <div class="container">
+
+                <div class="content is-large">
+                    <h1 class="title">
+                        Wintersmith
+                    </h1>
+                </div>
+                
+                <div class="content">
+                    <h2>
+                        Terry Pratchett
+                    </h2>
+                    <p class="subtitle">
+                        Finished on July 27, 2020
+                    </p>
+                    <p>
+                        Tiffany Aching leaps into a dance — and suddenly the spirit of winter is in love with her. 
+                        He’s showering her with snowflakes and offering her a crown of ice — which is creepy, but also just a little bit … cool. 
+                        Now she’s dancing to his tune. She can’t change the steps. 
+                        But unless Tiffany can work out how to deal with the Wintersmith, there will never be another springtime.
+                    </p>
+
+                    <blockquote>
+                        <p>Most witches lived by themselves (cat optional) and might go for weeks without ever seeing another witch. In those times when people hated witches, they were often accused of talking to their cats. Of course they talked to their cats. After three weeks without an intelligent conversation that wasn’t about cows, you’d talk to the <em>wall</em>.</p>
+                    </blockquote>
+                      
+                    <blockquote>
+                        <p>Some people think that ‘coven’ is a word for a group of witches, and it’s true that’s what the dictionary says. But the real word for a group of witches is ‘an argument’.</p>
+                    </blockquote>
+                      
+                    <blockquote>
+                        <p>It says something about witches that an old friend and an old enemy could quite often be the same person.</p>
+                    </blockquote>
+                      
+                    <blockquote>
+                        <p>‘I am an old person and that means what I say is wisdom!’</p>
+                    </blockquote>
+                      
+                    <blockquote>
+                        <p>‘The ancient kings of Djelibeybi, who are burried in pyramids,’ said Miss Treason, from the bed, ‘used to believe that they could take things with them into the next world. Such things as gold and precious stones and even slaves. On that basis, please make me a ham sandwich.’</p>
+                    </blockquote>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+
+            <div class="columns">
+                <div class="column">
+                    <div class="content has-text-centered">
+                        <p>
+                            <strong>2019 © James Watkins</strong>
+                        </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content has-text-centered">
+                        <p class="is-size-7">
+                            <strong>Knowledge is power, power is energy, energy is matter, matter is mass, and mass changes time and space. &mdash;Sir Terry Pratchett</strong>
+                        </p>
+                    </div>
+                </div>
+              </div>
+        </footer>
+        <!-- End of footer -->
+
+    </body>
+</html>

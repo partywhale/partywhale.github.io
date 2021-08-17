@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The Wee Free Men &middot; James Watkins</title>
+
+        <link rel="stylesheet" href="/css/bulma.css">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/favicon.png" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+
+        <script src="https://kit.fontawesome.com/2aa900dc82.js" crossorigin="anonymous"></script>
+        <script src="/js/jquery-3.6.0.min.js"></script>
+        <script src="/js/burgermenu.js"></script>
+    </head>
+    <body>
+
+        <!--Navigation bar-->
+        <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item is-size-4" href="https://jameswatkins.me">
+                    <strong>jameswatkins.me</strong>
+                </a>
+          
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="nav-placeholder">
+
+            </div>
+
+            <script>
+                var $ = jQuery.noConflict();
+                $.get("/navigation.html", function(data){
+                    $("#nav-placeholder").replaceWith(data);
+                });
+            </script>
+        </nav>
+        <!--end of Navigation bar-->
+
+        <section class="section">
+            <div class="container">
+
+                <div class="content is-large">
+                    <h1 class="title">
+                        The Wee Free Men
+                    </h1>
+                </div>
+                
+                <div class="content">
+                    <h2>
+                        Terry Pratchett
+                    </h2>
+                    <p class="subtitle">
+                        Finished on February 23, 2020
+                    </p>
+                    <p>
+                        Armed only with a frying pan and her common sense, Tiffany Aching, a young witch-to-be, is all that stands between the monsters of Fairyland 
+                        and the warm, green Chalk country that is her home.
+                    </p>
+
+                    <blockquote>
+                        <p>‘Witches are naturally nosy,’ said Miss Tick, standing up. ‘Well, I must go. I hope we shall meet again. I will give you some free advice, though.’<br />
+                        ‘Will it cost me anything?’<br />
+                        ‘What? I just said it was free!’ said Miss Tick.<br />
+                        ‘Yes, but my father said that free advice often turns out to be expensive,’ said Tiffany.<br />
+                        Miss Tick sniffed. ‘You could say this advice is priceless,’ she said, ‘Are you listening?’<br />
+                        ‘Yes,’ said Tiffany.<br />
+                        ‘Good. Now… if you trust in yourself…’<br />
+                        ‘Yes?’<br />
+                        ‘…and believe in your dreams…’<br />
+                        ‘Yes?’<br />
+                        ‘…and follow your star…’ Miss Tick went on.<br />
+                        ‘Yes?’<br />
+                        ‘…you’ll still be beaten by people who spent their time working hard and learning things and weren’t so lazy. Goodbye.’</p>
+                    </blockquote>
+                      
+                    <blockquote>
+                        <p>This time it had been magic. And it didn’t stop being magic just because you found out how it was done.</p>
+                    </blockquote>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+
+            <div class="columns">
+                <div class="column">
+                    <div class="content has-text-centered">
+                        <p>
+                            <strong>2019 © James Watkins</strong>
+                        </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content has-text-centered">
+                        <p class="is-size-7">
+                            <strong>Knowledge is power, power is energy, energy is matter, matter is mass, and mass changes time and space. &mdash;Sir Terry Pratchett</strong>
+                        </p>
+                    </div>
+                </div>
+              </div>
+        </footer>
+        <!-- End of footer -->
+
+    </body>
+</html>

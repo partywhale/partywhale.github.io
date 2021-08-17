@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>A Cartesian Celestial Coordinate Function in Python &middot; James Watkins</title>
+
+        <link rel="stylesheet" href="/css/bulma.css">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/favicon.png" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+
+        <script src="https://kit.fontawesome.com/2aa900dc82.js" crossorigin="anonymous"></script>
+        <script src="/js/jquery-3.6.0.min.js"></script>
+        <script src="/js/burgermenu.js"></script>
+
+        <!--Load Highlight.js for code snippet syntax highlighting-->
+        <link rel="stylesheet" href="/highlight/styles/atom-one-dark.min.css">
+        <script src="/highlight/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+        <!--End Highlight.js-->
+    </head>
+    <body>
+
+        <!--Navigation bar-->
+        <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item is-size-4" href="https://jameswatkins.me">
+                    <strong>jameswatkins.me</strong>
+                </a>
+          
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="nav-placeholder">
+
+            </div>
+
+            <script>
+                var $ = jQuery.noConflict();
+                $.get("/navigation.html", function(data){
+                    $("#nav-placeholder").replaceWith(data);
+                });
+            </script>
+        </nav>
+        <!--end of Navigation bar-->
+
+        <section class="section">
+            <div class="container">
+
+                <div class="content is-large">
+                    <h1 class="title">
+                        A Cartesian Celestial Coordinate Function in Python
+                    </h1>
+                    <p class="subtitle">
+                        June 26, 2019 &middot; Python &middot; Astronomy
+                    </p>
+                </div>
+                
+                <div class="content">
+                    <p>
+                        As an addendum to my recent post on <a href="/posts/converting-equatorial-to-cartesian.html">converting equatorial celestial coordinates to Cartesian coordinates</a> (x, y, z), 
+                        I wrote a small Python function to demonstrate. It takes right ascension in hours, minutes, and seconds; declination in degrees, hours, and seconds; and distance. 
+                        It returns x y z coordinates as a tuple (but it would be easy to turn into another data type).
+                    </p>
+
+<pre><code class="highlight-python">import math
+
+# Convert sexigesimal degrees to decimal degrees
+def sexigesimalToDecimalDegrees(degrees, minutes, seconds):
+    decimalDegrees = degrees + (minutes / 60) + (seconds / 3600)
+    return decimalDegrees
+
+# Converts right ascension, declination, and distance to x y z coordinates
+def cartesianCoordinates(rhours, rminutes, rseconds, ddegrees, dminutes, dseconds, distance):
+    alpha = math.radians(sexigesimalToDecimalDegrees((rhours * 15), (rminutes * 15), (rseconds * 15)))
+    delta = math.radians(sexigesimalToDecimalDegrees(ddegrees, dminutes, dseconds))
+    x = round((distance * math.cos(delta) * math.cos(alpha)), 3)
+    y = round((distance * math.cos(delta) * math.sin(alpha)), 3)
+    z = round((distance * math.sin(delta)), 3)
+    return (x, y, z)</code></pre>
+
+                    <p>A quick test, again utilizing Aldebaran:</p>
+
+<pre><code class="highlight-python"># Right ascension: 4h 35m 55.23907s
+# Declination: 16° 30' 33.4885''
+# Distance: 20.0 pc
+aldebaran = cartesianCoordinates(4, 35, 55.23907, 16, 30, 33.4885, 20.0)
+print(aldebaran)</code></pre>
+
+                    <p>When we run the code, our Python shell spits out</p>
+
+                    <blockquote>
+                        <p>(6.878, 17.899, 5.683)</p>
+                    </blockquote>
+
+                    <p>
+                        Next we’ll need to write a program to utilize this function. I have two ideas in mind: a script to parse and reformat a CSV or Excel doc containing star data, 
+                        and a webapp to allow anyone to convert the coordinates of a star they’re curious about for… fun. But I’ll leave that for another time.
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+
+            <div class="columns">
+                <div class="column">
+                    <div class="content has-text-centered">
+                        <p>
+                            <strong>2019 © James Watkins</strong>
+                        </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content has-text-centered">
+                        <p class="is-size-7">
+                            <strong>Knowledge is power, power is energy, energy is matter, matter is mass, and mass changes time and space. &mdash;Sir Terry Pratchett</strong>
+                        </p>
+                    </div>
+                </div>
+              </div>
+        </footer>
+        <!-- End of footer -->
+
+    </body>
+</html>

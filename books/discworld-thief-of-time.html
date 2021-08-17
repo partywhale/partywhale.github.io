@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Thief of Time &middot; James Watkins</title>
+
+        <link rel="stylesheet" href="/css/bulma.css">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/favicon.png" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+
+        <script src="https://kit.fontawesome.com/2aa900dc82.js" crossorigin="anonymous"></script>
+        <script src="/js/jquery-3.6.0.min.js"></script>
+        <script src="/js/burgermenu.js"></script>
+    </head>
+    <body>
+
+        <!--Navigation bar-->
+        <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item is-size-4" href="https://jameswatkins.me">
+                    <strong>jameswatkins.me</strong>
+                </a>
+          
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="nav-placeholder">
+
+            </div>
+
+            <script>
+                var $ = jQuery.noConflict();
+                $.get("/navigation.html", function(data){
+                    $("#nav-placeholder").replaceWith(data);
+                });
+            </script>
+        </nav>
+        <!--end of Navigation bar-->
+
+        <section class="section">
+            <div class="container">
+
+                <div class="content is-large">
+                    <h1 class="title">
+                        Thief of Time
+                    </h1>
+                </div>
+                
+                <div class="content">
+                    <h2>
+                        Terry Pratchett
+                    </h2>
+                    <p class="subtitle">
+                        Finished on January 8, 2020
+                    </p>
+                    <p>
+                        On the Discworld time management is the job of the Monks of History, who store it and pump it from where it’s wasted 
+                        (like underwater - how much time does a codfish need?) to places like cities, where there’s never enough time. 
+                        But the construction of the world’s first truly accurate clock starts a race against, well, time for Lu Tze and his apprentice Lobsang Ludd. 
+                        Because it will stop time. And when time stands still, everything stops with it. Then there really is no future.
+                    </p>
+
+                    <blockquote>
+                        <p>There is no doubt that being human is incredibly difficult and cannot be mastered in one lifetime.</p>
+                    </blockquote>
+                      
+                    <blockquote>
+                        <p>Most of the things humans busied themselves with weren’t real, either. But sometimes the mind of the most sensible person encountered something so big, so complex, so alien to all understanding, that it told itself little stories about it instead. Then, when it felt it understood the story, it felt it understood the huge incomprehensible thing.</p>
+                    </blockquote>
+                      
+                    <blockquote>
+                        <p>As Lobsang followed the ambling Lu-Tze he heard the dojo master, who like all teachers never missed an opportunity to drive home a lesson, say: ‘Dojo! What is Rule One?’<br />
+                        Even the cowering challenger mumbled along to the chorus:<br />
+                        ‘Do not act incautiously when confronting little bald wrinkly smiling men!’</p>
+                    </blockquote>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+
+            <div class="columns">
+                <div class="column">
+                    <div class="content has-text-centered">
+                        <p>
+                            <strong>2019 © James Watkins</strong>
+                        </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content has-text-centered">
+                        <p class="is-size-7">
+                            <strong>Knowledge is power, power is energy, energy is matter, matter is mass, and mass changes time and space. &mdash;Sir Terry Pratchett</strong>
+                        </p>
+                    </div>
+                </div>
+              </div>
+        </footer>
+        <!-- End of footer -->
+
+    </body>
+</html>

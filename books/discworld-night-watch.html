@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Night Watch &middot; James Watkins</title>
+
+        <link rel="stylesheet" href="/css/bulma.css">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/favicon.png" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+
+        <script src="https://kit.fontawesome.com/2aa900dc82.js" crossorigin="anonymous"></script>
+        <script src="/js/jquery-3.6.0.min.js"></script>
+        <script src="/js/burgermenu.js"></script>
+    </head>
+    <body>
+
+        <!--Navigation bar-->
+        <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item is-size-4" href="https://jameswatkins.me">
+                    <strong>jameswatkins.me</strong>
+                </a>
+          
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="nav-placeholder">
+
+            </div>
+
+            <script>
+                var $ = jQuery.noConflict();
+                $.get("/navigation.html", function(data){
+                    $("#nav-placeholder").replaceWith(data);
+                });
+            </script>
+        </nav>
+        <!--end of Navigation bar-->
+
+        <section class="section">
+            <div class="container">
+
+                <div class="content is-large">
+                    <h1 class="title">
+                        Night Watch
+                    </h1>
+                </div>
+                
+                <div class="content">
+                    <h2>
+                        Terry Pratchett
+                    </h2>
+                    <p class="subtitle">
+                        Finished on February 13, 2020
+                    </p>
+                    <p>
+                        For a policeman, there can be few things worse than a serial killer loose in your city. 
+                        Except, perhaps, a serial killer who targets coppers, and a city on the brink of bloody revolution. 
+                        Truth! Justice! Freedom! Reasonably-priced love! And a hard-boiled egg!
+                    </p>
+
+                    <blockquote>
+                        <p>‘I get it,’ said the prisoner. ‘Good Cop, Bad Cop, eh?’<br />
+                        ‘If you like,’ said Vimes. ‘But we’re a bit short staffed here, so if I give you a cigarette would you mind kicking yourself in the teeth?’</p>
+                    </blockquote>
+                      
+                    <blockquote>
+                        <p>His movements could be called cat-like, except that he did not stop to spray urine up against things.</p>
+                    </blockquote>
+                      
+                    <blockquote>
+                        <p>‘Raising the flag and singing the anthem are, while somewhat suspicious, not in themselves acts of treason.’</p>
+                    </blockquote>
+                      
+                    <blockquote>
+                        <p>‘What did I tell you about Mister Safety Catch?’ said Vimes, weakly.<br />
+                        ‘When Mister Safety Catch Is Not On, Mister Crossbow Is Not Your Friend,’ recited Detritus, saluting.</p>
+                    </blockquote>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+
+            <div class="columns">
+                <div class="column">
+                    <div class="content has-text-centered">
+                        <p>
+                            <strong>2019 © James Watkins</strong>
+                        </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content has-text-centered">
+                        <p class="is-size-7">
+                            <strong>Knowledge is power, power is energy, energy is matter, matter is mass, and mass changes time and space. &mdash;Sir Terry Pratchett</strong>
+                        </p>
+                    </div>
+                </div>
+              </div>
+        </footer>
+        <!-- End of footer -->
+
+    </body>
+</html>
